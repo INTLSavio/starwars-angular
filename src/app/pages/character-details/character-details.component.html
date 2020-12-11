@@ -1,0 +1,26 @@
+<app-toolbar></app-toolbar>
+<div class="container">
+  <h1>Detalhes do Personagem</h1>
+  <div>
+    <span class="description">
+      <p class="title">Nome do Personagem:</p>
+      <p>{{character.name}}</p>
+    </span>
+
+    <span class="description">
+      <p class="title">Altura do Personagem:</p>
+      <p>{{character.height}} cm</p>
+    </span>
+
+    <span class="description">
+      <p class="title">Peso do Personagem:</p>
+      <p>{{character.mass}} Kg</p>
+    </span>
+
+    <span class="description">
+      <p class="title">Espécie do Personagem:</p>
+      <p *ngIf="!species;">Não Especificado</p>
+      <p #else>{{species}}</p>
+    </span>
+  </div>
+</div>

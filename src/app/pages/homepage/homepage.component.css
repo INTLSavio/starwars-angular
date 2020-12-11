@@ -1,0 +1,76 @@
+.tab-container {
+  padding-top: 16px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.title {
+  font-family: 'Roboto' sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.name {
+  margin-left: 4px;
+  font-family: 'Roboto' sans-serif;
+  font-size: 24px;
+}
+
+img {
+  width: 80px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+.characters-container {
+  margin: 50px;
+  display: block;
+}
+
+.starships-container {
+  margin: 50px;
+  display: block;
+}
+
+.mat-card-container {
+  display: flex;
+  border: 1px solid #CFD8DC;
+  border-radius: 4px 3px 6px / 2px 4px;
+  margin: 5px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+a {
+  color: #fff;
+  display: flex;
+  height: 56px;
+  background: #3654c9;
+  border-radius: 8px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  transition: background-color 0.2s;
+}
+
+a:hover{
+  background: #061b70;
+}
+
+.item-container {
+  display: flex;
+  width: 100%;
+}
+
+.item-title {
+  align-items: center;
+}
+

@@ -1,0 +1,56 @@
+<app-toolbar></app-toolbar>
+
+<mat-tab-group class="tab-container">
+  <mat-tab class="characters-container" label="PERSONAGENS">
+    <div>
+      <ng-container *ngFor="let character of characters | paginate: { id:'char', itemsPerPage: 6, currentPage: currentPageChar }; let i = index">
+        <mat-list role="list">
+          <mat-card
+            class="mat-card-container"
+          >
+            <img src={{userLogo}} alt="">
+            <div class="item-container">
+              <mat-card-header class="item-title">
+                <p class="title">Nome do Personagem: </p>
+                <p class="name"> {{character.name}}</p>
+              </mat-card-header>
+
+              <mat-card-content class="content" >
+                <a [routerLink]="['/character', character.id]" >Detalhes</a>
+              </mat-card-content>
+          </div>
+          </mat-card>
+        </mat-list>
+      </ng-container>
+      <pagination-controls id="char" previousLabel="Anterior" nextLabel="Próximo" (pageChange)="currentPageChar = $event"></pagination-controls>
+    </div>
+
+  </mat-tab>
+
+  <mat-tab class="starships-container" label="NAVES">
+    <div>
+      <ng-container *ngFor="let starship of starships | paginate: { id:'star', itemsPerPage: 6, currentPage: currentPageStar }; let i = index">
+        <mat-list role="list">
+          <mat-card
+            class="mat-card-container"
+          >
+            <img src={{starshipLogo}} alt="">
+            <div class="item-container">
+              <mat-card-header class="item-title">
+                <p class="title">Nome da Nave: </p>
+                <p class="name"> {{starship.name}}</p>
+              </mat-card-header>
+
+              <mat-card-content class="content" >
+                <a [routerLink]="['/starship', starship.id]" >Detalhes</a>
+              </mat-card-content>
+          </div>
+          </mat-card>
+        </mat-list>
+      </ng-container>
+      <pagination-controls id="star" previousLabel="Anterior" nextLabel="Próximo" (pageChange)="currentPageStar = $event"></pagination-controls>
+    </div>
+  </mat-tab>
+
+
+</mat-tab-group>

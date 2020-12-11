@@ -1,0 +1,29 @@
+.container {
+  background-color: #E8E6E6;
+  max-width: 1500px;
+  margin: 0 auto;
+  min-height: 720px;
+  border-radius: 16px;
+}
+
+.description {
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 16px;
+  font-family: 'Roboto' sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+p{
+  margin-top: 108px;
+  margin-left: 18px;
+  font-size: 32px;
+}
+
+.title {
+  font-weight: 700;
+}
