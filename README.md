@@ -1,5 +1,5 @@
 # Star Wars
-- Second technical test  
+- Technical test  
 - This is a client for informations about characters and starships of Star Wars.
 - This application use a SWAPI, an API Restful about Star Wars. 
 
